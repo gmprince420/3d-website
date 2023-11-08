@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'gilroy';
+  color: #000 !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.working {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1920px;
+  height: 100vh;
+  position: relative;
+}
+
+
+/***** navbar *****/
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav img {
+  width: 90px;
+  border: 2px solid white;
+  background-color: #fff;
+}
+
+#nleft,
+#nright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  pointer-events: all;
+  color: #424242;
+  text-decoration: none;
+  font-family: "instagram";
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+
+/***** End navbar *****/
+
+/***** main Section *****/
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-0%, -50%);
+      -ms-transform: translate(-0%, -50%);
+          transform: translate(-0%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.heroleft {
+  min-width: 50%;
+  margin-top: 90px;
+}
+
+.heroleft .elem {
+  height: 4.5vw;
+  overflow: hidden;
+}
+
+
+.heroleft .elem h1 {
+  line-height: 1.4;
+  font-family: "instagram";
+  color: #424242;
+  font-size: 4vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  text-transform: capitalize;
+}
+
+
+
+
+button {
+  cursor: pointer;
+  pointer-events: all;
+  padding: .5vw 2vw;
+  font-size: 1.2vw;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  margin-top: 2vw;
+  font-family: "instagram";
+}
+
+
+.heroright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 20%;
+}
+
+.heroright p {
+  text-align: right;
+  color: #666;
+  font-size: .9vw;
+  font-weight: 100;
+  font-family: "risska";
+  margin-bottom: 30px;
+}
+
+.heroright .image{
+  width: 100%;
+  height: 140px;
+  background-image: url(img/logo.jpg);
+  background-position: center;
+  opacity: .8;
+  background-size: cover;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+} 
+/***** main End Section *****/
+
+#back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#back #next {
+ -o-object-position: top;
+    object-position: top;
+}
